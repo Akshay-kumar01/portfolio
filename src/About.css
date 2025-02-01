@@ -1,0 +1,13 @@
+.about {
+    padding: 40px;
+    background-color: #e9ecef;
+}
+
+.about h2 {
+    font-size: 2rem;
+}
+
+.about p {
+    font-size: 1rem;
+    line-height: 1.5;
+}

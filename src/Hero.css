@@ -1,0 +1,104 @@
+/* Main container (holding all content) */
+.main-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Ensure content fills full viewport height */
+    overflow-x: hidden;
+}
+
+/* Particle Network Canvas */
+.particle-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Make sure it stays in the background */
+}
+
+/* Hero section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    /* Dark background */
+    color: #fff;
+    /* White text */
+    padding: 50px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent background */
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.resume-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+    background-color: #45a049;
+}
+
+/* Other Sections */
+.other-sections {
+    z-index: 1;
+    /* Ensure these sections appear above the canvas */
+}
+
+.about,
+.projects,
+.contact {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about h2,
+.projects h2,
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    /* Dark background for footer */
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+    /* Ensure it stays at the bottom */
+}
+
+.footer-resume-button {
+    padding: 10px 20px;
+    background-color: #2196f3;
+    /* Blue background for the footer button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.footer-resume-button:hover {
+    background-color: #0b7dda;
+}
