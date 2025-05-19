@@ -29,7 +29,7 @@ function Projects() {
       link: "https://github.com/Akshay-kumar01/E-Commerce-Website.git" // Updated link
     },
     { 
-      title: "Project Two", 
+      title: "Portfolio Site", 
       description: ["A portfolio site with animations."],
       link: "https://yourportfolio.com" // Replace with your actual project link
     },

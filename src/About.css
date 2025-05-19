@@ -1,13 +1,31 @@
 .about {
-    padding: 40px;
-    background-color: #e9ecef;
+    padding: 60px 40px;
+    margin: 40px auto;
+    background: linear-gradient(to right, #2a2a40, #1e1e2f);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+    max-width: 1200px;
+    text-align: center;
+    color: #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(74, 144, 226, 0.7);
 }
 
 .about h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: #4a90e2;
+    font-weight: 700;
+    margin-bottom: 25px;
 }
 
 .about p {
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ccc;
+    max-width: 750px;
+    margin: 0 auto;
 }

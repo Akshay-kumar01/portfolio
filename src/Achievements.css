@@ -1,32 +1,55 @@
 .achievements {
-    padding: 20px;
-    background-color: #f9f9f9;
+    padding: 60px 40px;
+    /* same padding as .projects */
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #1e1e2f;
+    /* same dark bg */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    color: #ddd;
+    /* Removed left border to keep consistent */
 }
 
-h2 {
+.achievements h2 {
     text-align: center;
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 20px;
+    color: #f0f0f0;
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: 700;
 }
 
 .achievement-list {
     list-style-type: decimal;
     padding-left: 20px;
-    color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    color: #ccc;
 }
 
 .achievement-item {
+    background: #2a2a40;
+    /* darker card bg */
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #4a90e2;
+    /* same accent as projects */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
     font-size: 16px;
-    color: #444;
-    margin-bottom: 10px;
+    color: #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(74, 144, 226, 0.7);
 }
 
 .achievement-item a {
-    color: #007bff;
+    color: #4a90e2;
     text-decoration: none;
+    font-weight: 600;
 }
 
 .achievement-item a:hover {
@@ -36,4 +59,28 @@ h2 {
 .achievement-badge {
     margin-top: 10px;
     width: 100px;
+}
+
+.certificate-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #4a90e2;
+    color: #fff !important;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 6px rgba(74, 144, 226, 0.5);
+    cursor: pointer;
+}
+
+.certificate-link+.certificate-link {
+    margin-left: 10px;
+}
+
+.certificate-link:hover {
+    background-color: #357abd;
+    box-shadow: 0 6px 12px rgba(53, 122, 189, 0.7);
 }

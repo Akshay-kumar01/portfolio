@@ -5,9 +5,118 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: #121212;
+  color: #e0e0e0;
+  position: relative;
+  overflow-x: hidden;
 }
 
+/* Blinking light background */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background:
+    radial-gradient(circle at 10% 20%, #4a90e2 2px, transparent 3px),
+    radial-gradient(circle at 30% 80%, #a8c0ff 1.5px, transparent 2.5px),
+    radial-gradient(circle at 50% 50%, #357abd 2px, transparent 3px),
+    radial-gradient(circle at 70% 30%, #4a90e2 1.5px, transparent 3px),
+    radial-gradient(circle at 90% 70%, #a8c0ff 2px, transparent 3px);
+  background-repeat: no-repeat;
+  animation: blink 3s infinite alternate;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+/* Code blocks */
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* Links */
+a {
+  color: #80cbc4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #4db6ac;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* Space between content blocks */
+.section {
+  margin: 60px auto;
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  padding: 40px 20px;
+}
+
+.blinking-lights-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.blinking-light {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #4a90e2;
+  animation: blink 2s infinite ease-in-out;
+  opacity: 0.4;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+}
+
+.App {
+  position: relative;
+  z-index: 1;
+  /* Ensure content appears above the lights */
 }

@@ -1,8 +1,8 @@
 import React from "react";
 import "./Achievements.css";
-import hacktoberfestBadge from "../public/hacktoberfest-badge.png"; // Path to your badge image
-import gwocBadge from "../public/gwoc-badge.png"; // Path to your badge image
-import ethereumCertificate from "../public/ethereum-certificate.pdf"; // Path to your certificate
+// import hacktoberfestBadge from "../public/hacktoberfest-badge.png"; // Path to your badge image
+// import gwocBadge from "../public/gwoc-badge.png"; // Path to your badge image
+// import ethereumCertificate from "../public/ethereum-certificate.pdf"; // Path to your certificate
 
 function Achievements() {
   return (
@@ -11,11 +11,15 @@ function Achievements() {
       <ul className="achievement-list">
         <li className="achievement-item">
           Hacktoberfest’21 Contributor. (Submitted a total of 6 PRs, out of which all got accepted.)
-          <img className="achievement-badge" src={hacktoberfestBadge} alt="Hacktoberfest Badge" />
+          {/* <img className="achievement-badge" src="/hacktoberfest-badge.jpeg" alt="Hacktoberfest Badge" /> */}
         </li>
         <li className="achievement-item">
           Girlscript Winter Of Code (GWOC’21) Contributor.
-          <img className="achievement-badge" src={gwocBadge} alt="GWOC Badge" />
+          <br />
+          <a href="/GWOC-badge.jpeg" target="_blank" rel="noopener noreferrer" className="certificate-link">
+            View Badge
+          </a>
+          {/* <img className="achievement-badge" src="/GWOC-badge.jpeg" alt="GWOC Badge" /> */}
         </li>
         <li className="achievement-item">
           Achieved Second runner-up in Ideathon’21 organized by MNTC, NIT Durgapur.
@@ -26,13 +30,18 @@ function Achievements() {
           Achieved First position in Ethereum project in Ten Days of Code organized by the GNU/Linux Users’ Group, NIT Durgapur.
           <br />
           Engineered a rapid system with user registration, 24-hour loan approvals, balance retrieval, ether transfers, and strong CRUD capabilities.
+          <br />
+          <a href="/Ethereum.jpg" target="_blank" rel="noopener noreferrer" className="certificate-link">
+            View Certificate
+          </a>
+          {/* <img className="etereum-badge" src="/Ethereum.jpg" alt="GWOC Badge" /> */}
         </li>
         <li className="achievement-item">
           Achieved the Letter Of Recommendation (LOR) as an intern (Graphic Designer) at the Pinkishe Foundation.
           <br />
-          <a href="/pinkishe-lor.pdf" target="_blank" rel="noopener noreferrer" className="certificate-link">
+          {/* <a href="/pinkishe-lor.pdf" target="_blank" rel="noopener noreferrer" className="certificate-link">
             View LOR Certificate
-          </a>
+          </a> */}
         </li>
         <li className="achievement-item">
           Solved a total of 400+ questions on online coding platforms – Leetcode and Codechef.
