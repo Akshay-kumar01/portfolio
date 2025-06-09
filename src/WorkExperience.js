@@ -32,7 +32,7 @@ function WorkExperience() {
         "Formulated captivating, engaging, impactful graphics for the organisation's social media posts.",
         "Supervised and directed the efforts of fellow graphic designers as a team lead of 20 members."
       ],
-      certificateLink: "master/public/Akshay_Kumar_SIngh_Pinkishe.png", // Certificate link for Pinkishe Foundation
+      certificateLink: "/Akshay_Kumar_SIngh_Pinkishe.png", // Certificate link for Pinkishe Foundation
       lorCertificateLink: "/LOR Akshay Kumar Singh.png" // Link to the LOR PDF
     }
   ];
